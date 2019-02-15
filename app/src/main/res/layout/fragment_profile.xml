@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="290dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:cardElevation="2dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="140dp"
+            android:id="@+id/username"
+            android:text="Kluivert" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello there,I'm using this cool chat app"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="100dp"
+            android:id="@+id/status"
+            />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/ic_work_black_24dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engineer"
+            android:layout_marginTop="155dp"
+            android:layout_marginStart="100dp"
+            android:id="@+id/discipline"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/ic_location_city_black_24dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Port Harcourt"
+            android:layout_marginTop="205dp"
+            android:layout_marginStart="100dp"
+            android:id="@+id/location"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/ic_account_box_black_24dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:layout_marginTop="255dp"
+            android:layout_marginStart="100dp"
+            android:id="@+id/gender"
+            />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:id="@+id/edit"
+            />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Log out"
+            android:textColor="@color/white"
+            android:id="@+id/logout"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="40dp"
+
+        >
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:layout_width="80dp"
+         android:layout_height="80dp"
+         android:layout_gravity="center"
+         android:src="#FF0405"
+         android:id="@+id/userimage"
+         />
+
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".UserDetails">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/escalator"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/setup_profile_image"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:id="@+id/cardname"
+
+        >
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="Name"
+            android:inputType="text"
+            android:id="@+id/UserName"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="230dp"
+        android:id="@+id/disi"
+        >
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/discipline"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="What do you do?,Engineer etc"
+        />
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="280dp"
+
+        >
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sex"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Gender? Male or female"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:id="@+id/cardloc"
+        >
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="Location"
+            android:inputType="text"
+            android:id="@+id/location"
+
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Save Details"
+        android:textColor="@color/white"
+        android:layout_marginTop="400dp"
+        android:id="@+id/saveInformationbutton"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Save"
+            />
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".EditProfile">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+       android:id="@+id/gobac"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/newImage"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:id="@+id/cdname"
+        >
+        <EditText
+            android:id="@+id/newname"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="Name"
+
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:id="@+id/cdstatus"
+        >
+        <EditText
+            android:id="@+id/newstatus"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/white"
+            android:hint="Status"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonstylewhite"
+        android:text="Update"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="430dp"
+        android:id="@+id/btnsave"
+        />
+
+
+</RelativeLayout>
